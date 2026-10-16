@@ -8,7 +8,7 @@ function Notes(){
     const [content, setContent] = useState("")
     const navigate = useNavigate()
     const token = localStorage.getItem('token')
-    const url = 'http://localhost:5000/api/notes'
+    const url = `${import.meta.env.VITE_API_URL}/api/notes`
     const headers = {Authorization: `Bearer ${token}`}
 
     const fetchNotes = async() =>{
@@ -56,7 +56,7 @@ function Notes(){
         <div>
             <header className="topbar">
                 <span className="brand">Notes</span>
-                
+
                 <button className="btn-ghost" onClick={handleLogout}>Log out</button>
             </header>
 

@@ -7,7 +7,7 @@ function Login(){
     const [password, setPassword] = useState("")
     const [error, setError] = useState("")
 
-    const url = 'http://localhost:5000/api/auth/login'
+    const url = `${import.meta.env.VITE_API_URL}/api/auth/login`
     const navigate = useNavigate()
 
     const handleSubmit = async(e) =>{
