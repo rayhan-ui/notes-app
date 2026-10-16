@@ -2,6 +2,11 @@
 
 A full-stack notes application built with the MERN stack. Users create an account, log in, and manage their own private notes. Every note belongs to one user, and nobody else can see it.
 
+**Live demo:** https://notes-app-ten-blush-15.vercel.app
+
+> The backend runs on a free Render plan, so the first request after a period of inactivity can take 30-50 seconds while the server wakes up.
+>
+> 
 ## Features
 
 - Sign up and log in with email and password
